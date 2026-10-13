@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8d7df">
+  <meta name="description" content="Маленькое приключение в честь твоих 22. Архитектура, искусство и одна очень особенная Фрося.">
+  <title>Ателье 22 · С днём рождения</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <svg class="symbols" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="dog" viewBox="0 0 100 100"><path d="M24 43C8 20 17 4 29 12L40 31H60L72 12C86 3 93 24 77 43L81 67C81 87 19 87 19 67Z" fill="currentColor"/><path d="M29 14L33 29L25 27ZM73 14L68 29L78 27" fill="#ad9c9b"/><ellipse cx="36" cy="53" rx="5" ry="6" fill="#faf5ec"/><ellipse cx="64" cy="53" rx="5" ry="6" fill="#faf5ec"/><circle cx="37" cy="54" r="2"/><circle cx="63" cy="54" r="2"/><path d="M35 68Q35 58 50 63Q65 58 65 68Q64 82 50 77Q36 82 35 68" fill="#706566"/><path d="M44 65Q50 61 56 65L50 70Z" fill="#181e1a"/><path d="M47 76Q50 89 54 76" fill="#f9a7be"/><path d="M69 35L85 27L85 43ZM68 35L60 27L60 43" fill="#f499b2"/><circle cx="69" cy="35" r="4" fill="#fbd65c"/></symbol>
+    <symbol id="flower" viewBox="0 0 100 100"><g fill="currentColor"><ellipse cx="50" cy="28" rx="14" ry="23"/><ellipse cx="50" cy="72" rx="14" ry="23"/><ellipse cx="28" cy="50" rx="23" ry="14"/><ellipse cx="72" cy="50" rx="23" ry="14"/></g><circle cx="50" cy="50" r="15" fill="#f4cf55"/></symbol>
+    <symbol id="arch" viewBox="0 0 100 100"><path d="M18 90V43a32 32 0 0 1 64 0v47H66V43a16 16 0 0 0-32 0v47Z" fill="currentColor"/></symbol>
+    <symbol id="bag" viewBox="0 0 100 100"><path d="M22 40H78L84 86H16Z" fill="none" stroke="currentColor" stroke-width="6"/><path d="M36 43V29a14 14 0 0 1 28 0v14" fill="none" stroke="currentColor" stroke-width="6"/></symbol>
+    <symbol id="chair" viewBox="0 0 100 100"><path d="M27 52V18H72V52M21 52H79V65H21ZM28 65V91M72 65V91" fill="none" stroke="currentColor" stroke-width="7"/></symbol>
+    <symbol id="sun" viewBox="0 0 100 100"><circle cx="50" cy="50" r="22" fill="currentColor"/><path d="M50 5V16M50 84V95M5 50H16M84 50H95M17 17L26 26M74 74L83 83M17 83L26 74M74 26L83 17" stroke="currentColor" stroke-width="5"/></symbol>
+  </defs></svg>
+  <header><a href="#" class="brand" aria-label="Ателье 22, начало">АТЕЛЬЕ <span>22</span></a><span class="header-note">ОДИН ОСОБЕННЫЙ ДЕНЬ</span><button id="restart" class="icon-button" aria-label="Начать заново" title="Начать заново">↺</button></header>
+  <main id="main">
+    <section id="intro" class="screen intro">
+      <div class="intro-copy"><p class="eyebrow">ДЛЯ МОЕЙ ЛЮБИМОЙ СЕСТРЫ</p><h1>С днём<br> рождения,<br><em>сестрёнка.</em></h1><p class="lead">Тебе 22.<br>И столько красоты ещё впереди.</p><button class="primary" id="start">Открыть свой день <span aria-hidden="true">↗</span></button><p class="little">Фрося уже ждёт тебя в городе.</p></div>
+      <div class="city-wrap"><svg class="city" viewBox="0 0 800 650" role="img" aria-label="Праздничный город: розовые и зелёные дома, галерея, деревья и чёрная Фрося">
+        <circle cx="618" cy="139" r="74" fill="#f4cf55"/><path d="M0 532Q260 460 800 509V650H0Z" fill="#bed3a6"/>
+        <path d="M157 511V221Q157 167 212 167H270V511Z" fill="#e886a6"/><path d="M166 221Q165 179 212 179" fill="none" stroke="#a65170" stroke-width="3"/>
+        <path d="M183 258V218a25 25 0 0 1 50 0v40ZM183 347V307a25 25 0 0 1 50 0v40ZM183 436V396a25 25 0 0 1 50 0v40Z" fill="#f8e4e6"/><path d="M207 197V258M207 286V347M207 375V436" stroke="#e886a6" stroke-width="5"/>
+        <path d="M279 512V245H489V512Z" fill="#f6d46c"/><path d="M270 245L384 165L498 245Z" fill="#497d60"/><path d="M306 290H459M306 342H459" stroke="#a99446" stroke-width="2"/><path d="M318 320V275a27 27 0 0 1 54 0v45ZM397 320V275a27 27 0 0 1 54 0v45Z" fill="#f8f3e7"/>
+        <path d="M348 512V416a36 36 0 0 1 72 0v96Z" fill="#497d60"/><path d="M384 386V512" stroke="#f6d46c" stroke-width="3"/><circle cx="397" cy="455" r="4" fill="#f6d46c"/>
+        <path d="M501 512V286H710V512Z" fill="#99bca0"/><path d="M490 286H721V267H490Z" fill="#497d60"/><path d="M528 397V346a29 29 0 0 1 58 0v51ZM622 397V346a29 29 0 0 1 58 0v51Z" fill="#f8f3e7"/><text x="605" y="444" fill="#254f3b" text-anchor="middle" font-family="Georgia" font-size="20">GALERIE</text><path d="M556 512V464H654V512" fill="#254f3b"/>
+        <path d="M111 527V370M70 447Q111 423 154 453" fill="none" stroke="#487255" stroke-width="7"/><ellipse cx="103" cy="354" rx="53" ry="82" fill="#719363"/><ellipse cx="82" cy="407" rx="42" ry="55" fill="#719363"/><path d="M750 533V438" stroke="#487255" stroke-width="7"/><ellipse cx="752" cy="417" rx="42" ry="65" fill="#719363"/>
+        <path d="M290 638L356 532H416L487 650" fill="#f8f3e7"/><path d="M0 555H800" stroke="#497d60" stroke-width="2"/><g fill="#f8e4e6"><circle cx="145" cy="563" r="7"/><circle cx="638" cy="557" r="7"/><circle cx="685" cy="581" r="5"/></g>
+        <use href="#dog" x="498" y="494" width="85" height="85" color="#262c28"/>
+        <path d="M481 80Q457 57 437 77M481 80Q502 59 522 78" fill="none" stroke="#497d60" stroke-width="3"/>
+        <g transform="translate(55 74) rotate(-10)"><rect width="128" height="105" fill="#f8f3e7"/><text x="64" y="73" font-family="Georgia" font-size="64" text-anchor="middle" fill="#497d60">22</text></g>
+      </svg><div class="city-caption"><span>ЭСКИЗ ТВОЕГО НОВОГО ГОДА</span><span>МАСШТАБ 1 : МЕЧТА</span></div></div>
+    </section>
+    <section id="adventure" class="screen adventure" hidden>
+      <nav class="steps" aria-label="Этапы праздника"><span data-step="0">01 / Архитектура</span><span data-step="1">02 / Фрося</span><span data-step="2">03 / Искусство</span></nav>
+      <div class="task-head"><p id="task-kicker" class="eyebrow"></p><h1 id="task-title" tabindex="-1"></h1><p id="task-copy"></p></div>
+      <div id="task-content"></div>
+      <div class="task-footer"><p id="feedback" role="status" aria-live="polite"></p><button id="next" class="primary" hidden>Продолжить <span aria-hidden="true">↗</span></button></div>
+    </section>
+    <section id="final" class="screen final" hidden><p class="eyebrow">ПРОЕКТ № 22 · СОЗДАН С ЛЮБОВЬЮ</p><div class="final-mark">22<svg aria-hidden="true"><use href="#flower"/></svg></div><h1>Твой самый красивый<br>проект — <em>твоя жизнь.</em></h1><p id="letter">Сестрёнка, с днём рождения! Пусть в твоих 22 будет место смелым идеям, красивым вещам, любимому искусству и людям, рядом с которыми тепло. Желаю тебе создавать не только удивительные здания, но и жизнь, в которой тебе хорошо. Мечтай масштабно, выбирай себя и сохраняй свой особенный взгляд на мир.</p><p class="signature">Обнимаю крепко.<br>И Фросю тоже.</p><svg class="final-dog" aria-label="Фрося"><use href="#dog"/></svg><button id="again" class="text-button">Прогуляться ещё раз ↗</button></section>
+  </main><footer><span>СДЕЛАНО С ЛЮБОВЬЮ</span><span>22 — ПРЕКРАСНОЕ НАЧАЛО</span></footer>
+</body>
+</html>
